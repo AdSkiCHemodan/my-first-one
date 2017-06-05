@@ -1,6 +1,9 @@
 from django.shortcuts import render
+# from .models import Post
 
 
 # Create your views here.
-def post_list(request):
-    return render(request, 'cvone/post_list.html', {})
+def cv(request):
+    readycv = ''
+    return render(request, 'cvone/cv.html', {'readycv': readycv})
+
